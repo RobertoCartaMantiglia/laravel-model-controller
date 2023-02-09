@@ -17,4 +17,4 @@ use App\Http\Controllers\Guest\PageController as PageController;
 */
 
 Route::get('/', [PageController::class, 'index']);
-/*la route verrà gestita dal controllore;*/
+/*la route verrà gestita dal controllore*/
