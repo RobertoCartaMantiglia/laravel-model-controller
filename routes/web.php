@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Guest\PageController as PageController;
+
+/*creato il collegamento fra la rotta e il controllore!
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +16,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [PageController::class, 'index']);
+/*la route verrà gestita dal controllore;*/
